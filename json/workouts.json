@@ -1,0 +1,125 @@
+{
+    "workouts": [
+        {
+            "name": "Standing Dumbbell Curl",
+            "category": [
+                "Biceps",
+                "Forearms"
+            ],
+            "description": "",
+            "weight": 35,
+            "reps": 12,
+            "sets": 3,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Standing Dumbbell Overhead Press",
+            "category": [
+                "Shoulders",
+                "Triceps",
+                "Traps"
+            ],
+            "description": "",
+            "weight": 25,
+            "reps": 10,
+            "sets": 3,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Situps",
+            "category": [
+                "Abs"
+            ],
+            "description": "",
+            "weight": 0,
+            "reps": 20,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Barbell Bench Press",
+            "category": [
+                "Chest",
+                "Shoulders",
+                "Triceps"
+            ],
+            "description": "",
+            "weight": 145,
+            "reps": 8,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Standing Cable Tricep Pushdown, Rope",
+            "category": [
+                "Triceps"
+            ],
+            "description": "",
+            "weight": 35,
+            "reps": 12,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Overhand Grip Pull Up",
+            "category": [
+                "Lats",
+                "Biceps"
+            ],
+            "description": "",
+            "weight": 0,
+            "reps": 10,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Barbell Back Squat",
+            "category": [
+                "Quads",
+                "Glutes",
+                "Adductors"
+            ],
+            "description": "",
+            "weight": 195,
+            "reps": 6,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Preacher Dumbbell Wrist Curl",
+            "category": [
+                "Forearms"
+            ],
+            "description": "",
+            "weight": 15,
+            "reps": 10,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Russian Twist",
+            "category": [
+                "Obliques"
+            ],
+            "description": "",
+            "weight": 0,
+            "reps": 20,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        },
+        {
+            "name": "Superman",
+            "category": [
+                "Lower Back",
+                "Glutes"
+            ],
+            "description": "",
+            "weight": 0,
+            "reps": 15,
+            "sets": 4,
+            "img": "https://via.placeholder.com/400x500"
+        }
+
+
+    ]
+}
