@@ -1,0 +1,22 @@
+{
+  "name": "lyft",
+  "version": "1.0.0",
+  "description": "Workout Tracking Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerSW/Lyft.git"
+  },
+  "author": "Spencer McLaughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerSW/Lyft/issues"
+  },
+  "homepage": "https://github.com/SpencerSW/Lyft#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
