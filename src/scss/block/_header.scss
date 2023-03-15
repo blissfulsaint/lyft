@@ -1,2 +1,14 @@
 @import "_body.scss";
 @import "../composition/theme";
+
+.head1 {
+    font-size:40px;
+    color:#6495ED;
+    font-weight:bold;
+    text-align: center;
+}
+.head2 {
+    font-size:17px;
+    margin-left:10px;
+    margin-bottom:15px;
+}
