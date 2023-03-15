@@ -1,1 +1,25 @@
 @import "../composition/theme";
+
+.menu { 
+    position: sticky;
+    top: 0;
+    background-color: #6495ED;
+    padding:10px 0px 10px 0px;
+    color:white;
+    margin: 0 auto;
+    overflow: hidden;
+
+    a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .menu-log {
+        right: auto;
+        float: right;
+    }
+}
