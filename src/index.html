@@ -103,13 +103,29 @@ footer {
       
     <!-- Body section -->
     <main class = "body_sec">
-        <section id="Content">
-            <h3>Content section</h3>
+        <img id="hero" src="/" alt="man working out">
+        <div>
+            <h1>Lyf+</h1>
+            <p>Lyft is an application to store your exercise plans and progress.
+                If you're a beginner, we also have an education section with 
+                exercises, muscle categories they hit, and plan recommendations.</p>
+        </div>
+        <section id="exercises-home">
+            <div class="card">
+                <img src="/" alt="">
+                <h1 class="exerciseName">Exercise Name</h1>
+                <h3 class="exerciseCategory">category</h3>
+                <p class="exerciseDescription">description</p>
+            </div>
+        </section>
+        <section class="register">
+            <h2>Don't have an account?</h2>
+            <button> Register Here!</button>
         </section>
       </main>
       
     <!-- Footer Section -->
-    <footer>Footer Section</footer>
+    <footer>&copy;LemonDrops 2023</footer>
     <script>
         const themeBtn = document.getElementById("theme-btn");
         themeBtn.onclick = () => {
