@@ -1,16 +1,33 @@
+// Color variables
+$primary-color-dark: #F88818;
+$primary-color-light: #1888F8;
+
+:root {
+    --primary-color: $primary-color-light;
+}
+
 .changeTheme {
     background: #1D1E22;
     color: #eee;
+    .menu {
+        background-color: $primary-color-dark;
+    }
+    .material-icons {
+        color: $primary-color-dark;
+    }
+    .head1 {
+        color: $primary-color-dark;
+    }
 }
 
 .material-icons { 
     font-size: 40px; 
-    color:#6495ED;
+    color: $primary-color-light;
 }
  
 .dark_mode {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #6495ED
+    color: var(--primary-color);
 }
