@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyft</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/style.css">
@@ -84,8 +87,10 @@ footer {
     <!-- Header Section -->
     <header> 
         <div class="head1">
-            <img src="images/lyftlogolight.png" class="logolight">
-            <img src="images/lyftlogodark.png" class="logodark">
+            <a href="index.html">
+                <img src="images/lyftlogolight.png" class="logolight">
+                <img src="images/lyftlogodark.png" class="logodark">
+            </a>
         </div>
         <div class="dark_mode">
             <i id="theme-btn" class="material-icons">dark_mode</i>
@@ -158,23 +163,11 @@ footer {
         </section>
         <section class="register">
             <h2>Don't have an account?</h2>
-            <button> Register Here!</button>
+            <a href="#">Register Here!</a>
         </section>
       </main>
       
     <!-- Footer Section -->
     <footer><p>&copy;LemonDrops 2023</p></footer>
-    <script>
-        const themeBtn = document.getElementById("theme-btn");
-        themeBtn.onclick = () => {
-        if (themeBtn.innerHTML === 'dark_mode') {
-            document.body.classList.add("changeTheme");
-            themeBtn.innerHTML = 'light_mode'
-        } else {
-            document.body.classList.remove("changeTheme");
-            themeBtn.innerHTML = 'dark_mode'
-        }
-        }
-    </script>
 </body>
 </html>

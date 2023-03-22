@@ -14,7 +14,7 @@ $hover-color: rgb(228, 228, 228);
 
 .card {
     border: 1px solid $primary-color-light;
-    border-radius: 10%;
+    border-radius: 2em;
     p {
         padding: 5px 0;
         font-size: 1.3em;
@@ -35,6 +35,15 @@ a {
     &:hover {
         background-color: $hover-color;
         color: $primary-color-light;
+    }
+    &:not(nav a, header a) {
+        background-color: $primary-color-light;
+        text-decoration: none;
+        padding: .5em .7em;
+        border-radius: .5em;
+        display: block;
+        width: fit-content;
+        margin: .7em auto;
     }
 }
  
@@ -68,8 +77,10 @@ a {
         }
     }
     a {
+        background-color: $primary-color-dark;
         &:hover {
             color: $primary-color-dark;
+            background-color: $hover-color;
         }
     }
     #hero {

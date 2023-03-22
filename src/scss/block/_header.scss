@@ -16,9 +16,13 @@ header {
     color: $primary-color-light;
     font-weight:bold;
     text-align: center;
+    width: fit-content;
     img {
         margin: 10px .3em;
         height: 1em;
+    }
+    a {
+        width: fit-content;
     }
 }
 .dark_mode:hover {

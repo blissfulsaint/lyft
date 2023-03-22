@@ -19,24 +19,23 @@ async function ConsoleLogWorkouts() {
 ConsoleLogWorkouts();
 
 
-// This was added to the main index.html file.
-    // const themeBtn = document.getElementById("theme-btn");
-    // themeBtn.onclick = () => {
-    //   console.log('hello world')
-    //   if (themeBtn.innerHTML === 'dark_mode') {
-    //     document.body.classList.add("changeTheme");
-    //     themeBtn.innerHTML = 'light_mode'
-    //   } else {
-    //     document.body.classList.remove("changeTheme");
-    //     themeBtn.innerHTML = 'dark_mode'
-    //   }
-    // }
+
+const themeBtn = document.getElementById("theme-btn");
+themeBtn.onclick = () => {
+    if (themeBtn.innerHTML === 'dark_mode') {
+        document.body.classList.add("changeTheme");
+        themeBtn.innerHTML = 'light_mode'
+    } else {
+        document.body.classList.remove("changeTheme");
+        themeBtn.innerHTML = 'dark_mode'
+    }
+}
     
 const parallax = document.getElementById("hero-img");
 
 window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.5 - 30 + "px";
+    parallax.style.backgroundPositionY = offset * 0.5 - 35 + "px";
     // DIV 1 background will move slower than other elements on scroll.
 });
 
