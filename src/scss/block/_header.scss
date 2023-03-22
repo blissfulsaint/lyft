@@ -1,16 +1,25 @@
 @import "_body.scss";
 @import "../composition/theme";
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .dark_mode {
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        margin: auto 10px auto auto;
+    }
+}
 .head1 {
     font-size:3em;
     color: $primary-color-light;
     font-weight:bold;
     text-align: center;
-}
-.head2 {
-    font-size:1em;
-    margin-left:10px;
-    margin-bottom:15px;
+    img {
+        margin: 10px .3em;
+        height: 1em;
+    }
 }
 .dark_mode:hover {
     cursor: pointer;

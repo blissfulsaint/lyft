@@ -21,6 +21,14 @@ $hover-color: rgb(228, 228, 228);
     }
 }
 
+.logolight {
+    display: block;
+}
+
+.logodark {
+    display: none;
+}
+
 a { 
     transition: $hover-transition;
     color: white;
@@ -32,9 +40,6 @@ a {
  
 .dark_mode {
     .material-icons{
-        position: absolute;
-        top: 10px;
-        left: 10px;
         transition: $hover-transition;
         &:hover {
             color: $primary-color-dark;
@@ -75,6 +80,12 @@ a {
     }
     .card {
         border-color: $primary-color-dark;
+    }
+    .logolight {
+        display: none;
+    }
+    .logodark {
+        display: block;
     }
 }
 

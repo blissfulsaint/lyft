@@ -15,7 +15,7 @@
          }
     
         border-radius: 0 0 0 100%;
-        h1 {
+        img {
             position: absolute;
             top: 60%;
             left: 7%;
@@ -43,6 +43,7 @@
             display: block;
             height: 9em;
             overflow: hidden;
+            border-radius: 10%;
         }
     }
 }
