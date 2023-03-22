@@ -36,6 +36,6 @@ const parallax = document.getElementById("hero-img");
 
 window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.5 + "px";
+    parallax.style.backgroundPositionY = offset * 0.5 - 30 + "px";
     // DIV 1 background will move slower than other elements on scroll.
 });
