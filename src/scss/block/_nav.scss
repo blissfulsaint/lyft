@@ -1,8 +1,10 @@
 @import "../composition/theme";
 
-.menu { 
+nav {
     position: sticky;
     top: 0;
+}
+.menu { 
     background-color: $primary-color-light;
     color:white;
     margin: 0 auto;
