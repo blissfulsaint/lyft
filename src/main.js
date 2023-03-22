@@ -31,3 +31,11 @@ ConsoleLogWorkouts();
     //     themeBtn.innerHTML = 'dark_mode'
     //   }
     // }
+    
+const parallax = document.getElementById("hero-img");
+
+window.addEventListener("scroll", function () {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.5 + "px";
+    // DIV 1 background will move slower than other elements on scroll.
+});

@@ -2,13 +2,16 @@
 @import "../composition/theme";
 
 .head1 {
-    font-size:40px;
+    font-size:3em;
     color: $primary-color-light;
     font-weight:bold;
     text-align: center;
 }
 .head2 {
-    font-size:17px;
+    font-size:1em;
     margin-left:10px;
     margin-bottom:15px;
+}
+.dark_mode:hover {
+    cursor: pointer;
 }
