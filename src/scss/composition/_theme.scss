@@ -1,9 +1,60 @@
+@import '../utility/animations';
 // Color variables
-$primary-color-dark: #F88818;
-$primary-color-light: #1888F8;
+$primary-color-light: #F88818;
+$primary-color-dark: #1888F8;
+$hover-color: rgb(228, 228, 228);
 
 :root {
     --primary-color: $primary-color-light;
+}
+
+* {
+    border-color: $primary-color-light;
+}
+
+.card {
+    border: 1px solid $primary-color-light;
+    border-radius: 2em;
+    p {
+        padding: 5px 0;
+        font-size: 1.3em;
+    }
+}
+
+.logolight {
+    display: block;
+}
+
+.logodark {
+    display: none;
+}
+
+a { 
+    transition: $hover-transition;
+    color: white;
+    &:hover {
+        background-color: $hover-color;
+        color: $primary-color-light;
+    }
+    &:not(nav a, header a) {
+        background-color: $primary-color-light;
+        text-decoration: none;
+        padding: .5em .7em;
+        border-radius: .5em;
+        display: block;
+        width: fit-content;
+        margin: .7em auto;
+    }
+}
+ 
+.dark_mode {
+    .material-icons{
+        transition: $hover-transition;
+        &:hover {
+            color: $primary-color-dark;
+        }
+
+    }
 }
 
 .changeTheme {
@@ -18,16 +69,38 @@ $primary-color-light: #1888F8;
     .head1 {
         color: $primary-color-dark;
     }
+    .dark_mode{
+        .material-icons{
+            &:hover {
+                color: $primary-color-light;
+            }
+        }
+    }
+    a {
+        background-color: $primary-color-dark;
+        &:hover {
+            color: $primary-color-dark;
+            background-color: $hover-color;
+        }
+    }
+    #hero {
+        border-color: $primary-color-dark;
+    }
+    * {
+        border-color: $primary-color-dark;
+    }
+    .card {
+        border-color: $primary-color-dark;
+    }
+    .logolight {
+        display: none;
+    }
+    .logodark {
+        display: block;
+    }
 }
 
 .material-icons { 
     font-size: 40px; 
     color: $primary-color-light;
-}
- 
-.dark_mode {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: var(--primary-color);
 }

@@ -4,22 +4,18 @@
     position: sticky;
     top: 0;
     background-color: $primary-color-light;
-    padding:10px 0px 10px 0px;
     color:white;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.371);
 
     a {
-        float: left;
-        color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 20px;
-    }
-
-    .menu-log {
-        right: auto;
-        float: right;
+        font-size: 1.3em;
     }
 }
