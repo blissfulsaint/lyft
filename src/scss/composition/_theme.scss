@@ -98,6 +98,30 @@ a {
     .logodark {
         display: block;
     }
+    .close {
+        color: white;
+        &:hover {
+            color: $primary-color-dark;
+        }
+    }
+    .modal-content {
+        background-color: #1D1E22;
+        border-color: $primary-color-dark;
+        .container {
+            input {
+                border-color: $primary-color-dark;
+            }
+            button {
+                background-color: $primary-color-dark;
+                &:hover {
+                    color: $primary-color-dark;
+                }
+            }
+            a {
+                color: $primary-color-dark;
+            }
+        }
+    }
 }
 
 .material-icons { 
