@@ -21,3 +21,129 @@ nav {
         font-size: 1.3em;
     }
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 2px solid $primary-color-light;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 30em;
+    border-radius: 2em;
+    padding: 1em;
+    transition: .2s;
+    .imgcontainer {
+        max-width: 13em;
+        max-height: 13em;
+        margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 1em;
+        }
+    }
+    .container {
+        margin-left: 1em;
+        font-size: 1.2em;
+        margin: 0 auto;
+        width: fit-content;
+        label, input {
+            display: block;
+            input {
+                display: inline;
+            }
+        }
+        label {
+            margin-top: .7em;
+        }
+        input {
+            border: 1px solid $primary-color-light;
+            font-size: .9em;
+            font-weight: lighter;
+        }
+        button {
+            border: none;
+            background-color: $primary-color-light;
+            color: white;
+            transition: $hover-transition;
+            font-size: 1em;
+            margin: 1em auto 0;
+            display: block;
+            width: 100%;
+            &:hover {
+                cursor: pointer;
+                color: $primary-color-light;
+                background-color: $hover-color;
+            }
+        }
+        input:not(input[type='checkbox']), button {
+            padding: .4em .6em;            
+            border-radius: .4em;
+            width: 100%;
+        }
+        h2 {
+            font-size: .8em;
+            margin-top: 1em;
+        }
+        a {
+            background-color: transparent;
+            color: $primary-color-light;
+            font-size: .8em;
+            padding: 0;
+            margin: 0 auto;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+  
+  /* The Close Button (x) */
+.close {
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    transition: $hover-transition;
+    width: 40px;
+    display: block;
+    text-align: center;
+    margin: 0 5px auto auto;
+}
+  
+.close:hover,
+.close:focus {
+    color: $primary-color-light;
+    cursor: pointer;
+}
+  
+  /* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  
+}
+  
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+  
