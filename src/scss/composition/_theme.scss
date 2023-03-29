@@ -122,6 +122,32 @@ a {
             }
         }
     }
+    form:not(#login) {
+        fieldset {
+            border-color: $primary-color-dark;
+            legend {
+                color: $primary-color-dark;
+            }
+            input {
+                border-color: $primary-color-dark;
+                background-color: #1D1E22;
+                color: white;
+            }
+            button {
+                background-color: $primary-color-dark;
+                &:hover {
+                    color: $primary-color-dark;
+                }
+            }
+        }
+    }
+    .blink {
+        background-color: transparent;
+        color: $primary-color-dark;
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }
 
 .material-icons { 

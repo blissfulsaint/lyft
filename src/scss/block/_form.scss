@@ -1,0 +1,49 @@
+form:not(#login) {
+    fieldset {
+        border: 1px solid $primary-color-light;
+        border-radius: .8em;
+        width: 90%;
+        max-width: 35em;
+        padding: 1em;
+        margin: 2em auto 1em;
+        legend {
+            color: $primary-color-light;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 0 1em;
+        }
+        label, input {
+            display: block;
+            font-size: 1.5em;
+        }
+        label {
+            margin: 1em auto .3em;
+        }
+        input {
+            border: 1px solid $primary-color-light;
+            padding: .3em;
+            width: 100%;
+            border-radius: .3em;
+        }
+        button {
+            background-color: $primary-color-light;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            margin: 1em auto 0;
+            display: block;
+            padding: .3em .7em;
+            border-radius: .4em;
+            width: 100%;
+            transition: $hover-transition;
+            @media screen and (min-width: 450px) {
+                width: fit-content;
+            }
+            &:hover {
+                background-color: $hover-color;
+                color: $primary-color-light;
+                cursor: pointer;
+            }
+        }
+    }
+}
