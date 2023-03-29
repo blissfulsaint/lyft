@@ -1,4 +1,6 @@
 import { loadHeaderFooter } from './js/utils.mjs';
+import Workout from './js/workout.js'
+import { baseHtml } from './js/baseHomepage'
 
 loadHeaderFooter();
 
@@ -6,18 +8,42 @@ const url = "./json/workouts.json";
 
 // Fetches the JSON data and returns it as an array of workouts.
 async function fetchData() {
+    const login = true
     let response = await fetch('./json/workouts.json');
     let data = await response.json();
     let workouts = data.workouts;
-    console.log(workouts);
+    let e = document.getElementById("dropdown")
+    let workoutType = ""
+    
+    let workoutCards = new Array()
+    let i = 0
+
+    e.addEventListener('change', function handleChange(event) {
+        workoutType = event.target.value 
+        document.getElementById('exercises-home').innerHTML = ''
+
+        if (login === true) {
+            workouts.forEach(element => {
+                if (element.muscle === workoutType) {
+                    workoutCards[i] = new Workout(element.name, element.type, element.muscle, element.equipment, element.difficulty)
+                    i++
+                }
+            })
+        } else {
+            baseHomepage()
+        }
+    });
+
     return workouts;
 }
+
+const baseHomepage = () => document.getElementById('exercises-home').insertAdjacentHTML('beforeend', baseHtml)
 
 // This just displays the workouts into the console.
 async function ConsoleLogWorkouts() {
     const items = await fetchData();
     items.forEach(element => {
-        console.log(element);
+       // console.log(element);
     });
 }
 ConsoleLogWorkouts();
