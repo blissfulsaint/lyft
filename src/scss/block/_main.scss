@@ -86,3 +86,19 @@ main {
 }
 
 
+#register-content {
+    h1 {
+        text-align: center;
+        margin: 1em 0 0;
+    }
+}
+
+.blink {
+    background-color: transparent;
+    color: $primary-color-light;
+    font-size: 1.3em;
+    &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}

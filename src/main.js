@@ -47,15 +47,26 @@ const observer = new MutationObserver(callback);
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
 
+if (window.localStorage.getItem('darkmode') == 'TRUE') {
+    document.body.classList.add('changeTheme');
+    document.getElementById('theme-btn')
+}
+
 async function darkMode() {
     const themeBtn = document.getElementById("theme-btn");
+    if (window.localStorage.getItem('darkmode') == 'TRUE') {
+        document.body.classList.add('changeTheme');
+        themeBtn.innerHTML = 'light_mode';
+    }
     themeBtn.onclick = () => {
         if (themeBtn.innerHTML === 'dark_mode') {
             document.body.classList.add("changeTheme");
-            themeBtn.innerHTML = 'light_mode'
+            themeBtn.innerHTML = 'light_mode';
+            window.localStorage.setItem('darkmode', 'TRUE');
         } else {
             document.body.classList.remove("changeTheme");
-            themeBtn.innerHTML = 'dark_mode'
+            themeBtn.innerHTML = 'dark_mode';
+            window.localStorage.setItem('darkmode', 'FALSE');
         }
     }
 }
