@@ -1,7 +1,5 @@
 import { loadHeaderFooter } from "./utils.mjs";
 
-loadHeaderFooter();
-
 let response = await fetch('https://lift-api.onrender.com/exercises/');
 let data = await response.json();
 
