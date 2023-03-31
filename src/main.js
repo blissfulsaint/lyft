@@ -9,6 +9,7 @@ const url = "./json/workouts.json";
 // Fetches the JSON data and returns it as an array of workouts.
 async function fetchData() {
     const login = true
+    
     let response = await fetch('./json/workouts.json');
     let data = await response.json();
     let workouts = data.workouts;
