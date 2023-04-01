@@ -1,6 +1,6 @@
 import { loadHeaderFooter } from './js/utils.mjs';
-// import Workout from './js/workout.js'
-// import { baseHtml } from './js/baseHomepage'
+import Workout from './js/workout.js'
+import { baseHtml } from './js/baseHomepage'
 
 loadHeaderFooter();
 
