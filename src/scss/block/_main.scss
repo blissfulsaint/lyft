@@ -59,7 +59,7 @@ main {
 
 }
 
-#exercises-home {
+#exercises-home, .cards {
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +75,14 @@ main {
             overflow: hidden;
             border-radius: 1em;
         }
+    }
+}
+
+#exercises {
+    h1 {
+        margin-top: 1em;
+        text-align: center;
+        font-size: 3em;
     }
 }
 
@@ -100,5 +108,21 @@ main {
     &:hover {
         background-color: transparent;
         text-decoration: underline;
+    }
+}
+
+.workout_dropdown {
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 1.5em auto auto;
+    }
+    select {
+        font-size: 1.5em;
+        padding: .2em .4em;
+        margin: 2em auto;
+        display: block;
+        border-radius: .4em;
+        border-color: $primary-color-light;
     }
 }
