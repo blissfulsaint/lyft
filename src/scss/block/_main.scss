@@ -59,7 +59,7 @@ main {
 
 }
 
-#exercises-home {
+#exercises-home, .cards {
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +75,14 @@ main {
             overflow: hidden;
             border-radius: 1em;
         }
+    }
+}
+
+#exercises {
+    h1 {
+        margin-top: 1em;
+        text-align: center;
+        font-size: 3em;
     }
 }
 

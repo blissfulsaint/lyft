@@ -148,6 +148,11 @@ a {
             background-color: transparent;
         }
     }
+    #dropdown {
+        border-color: $primary-color-dark;
+        background-color: #1D1E22;
+        color: #eee;
+    }
 }
 
 .material-icons { 
