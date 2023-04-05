@@ -41,7 +41,7 @@ workoutForm.addEventListener("submit", async (e) => {
   const name = document.getElementById('exercise-name').value;
   const categories = document.getElementById('category-name').value;
   const description = document.getElementById('description').value;
-  const image = document.getElementById('exercise-image').value;
+  // const image = document.getElementById('exercise-image').value;
   
 
   // let data = await document.getElementById('addWorkoutForm');
@@ -58,7 +58,7 @@ workoutForm.addEventListener("submit", async (e) => {
       categories: categories,
       name: name,
       description: description,
-      images: image
+      // images: image
     }),
 
   }); 
