@@ -1,4 +1,8 @@
-import { loadHeaderFooter } from "./utils.mjs";
+// import { loadHeaderFooter } from "./utils.mjs";
+
+
+
+
 
 let response = await fetch('https://lift-api.onrender.com/exercises/');
 let data = await response.json();
@@ -27,5 +31,42 @@ data.forEach((item) => {
 
 
 
+
+
+var workoutForm = document.getElementById('addWorkoutForm');
+
+workoutForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('exercise-name').value;
+  const categories = document.getElementById('category-name').value;
+  const description = document.getElementById('description').value;
+  const image = document.getElementById('exercise-image').value;
+  
+
+  // let data = await document.getElementById('addWorkoutForm');
+  // let FORM = (await new FormData(data.value))
+  // console.log(FORM);
+
+  let response = await fetch('https://lift-api.onrender.com/exercises', {
+    method: 'POST',
+    headers: {"accept": "application/json"},
+
+    // body: JSON.stringify(FORM)
+
+    body: JSON.stringify({
+      categories: categories,
+      name: name,
+      description: description,
+      images: image
+    }),
+
+  }); 
+  
+
+  console.log(response);
+  let result = response.json();
+  console.log(result);
+});
 
 

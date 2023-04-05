@@ -20,9 +20,12 @@ export async function loadHeaderFooter() {
     const footerElement = document.querySelector('footer');
     const loginTemplate = await loadTemplate('../partials/login.html');
     const loginElement = document.querySelector('#id01');
+    const workoutTemplate = await loadTemplate('../partials/addWorkout.html');
+    const workoutElement = document.querySelector('#addWorkoutForm');
 
     renderWithTemplate(headerTemplate, headerElement);
     renderWithTemplate(navTemplate, navElement);
     renderWithTemplate(footerTemplate, footerElement);
     renderWithTemplate(loginTemplate, loginElement);
+    renderWithTemplate(workoutTemplate, workoutElement);
 }
