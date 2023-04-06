@@ -70,3 +70,11 @@ workoutForm.addEventListener("submit", async (e) => {
 });
 
 
+// const formEl = document.querySelector('#exercise-form');
+
+// formEl.addEventListener('submit', event => {
+//   event.preventDefault();
+
+//   const formData = new FormData(formEl);
+//   formData.get('name');
+// })
