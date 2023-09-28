@@ -1,0 +1,887 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --wght: 600;
+  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: 0deg;
+  /* Slant: 0 to -15 degrees, auto cursive at -14 */
+}
+
+h1, h2, h3, h4, span.head1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+p, li, a, span, footer, button, label, legend {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+:root {
+  --primary-color: $primary-color-light;
+}
+
+* {
+  border-color: #F88818;
+}
+
+.card {
+  border: 1px solid #F88818;
+  border-radius: 2em;
+}
+.card p {
+  padding: 5px 0;
+  font-size: 1.3em;
+}
+
+.logolight {
+  display: block;
+}
+
+.logodark {
+  display: none;
+}
+
+a {
+  transition: 0.25s;
+  color: white;
+}
+a:hover {
+  background-color: rgb(228, 228, 228);
+  color: #F88818;
+}
+a:not(nav a, header a) {
+  background-color: #F88818;
+  text-decoration: none;
+  padding: 0.5em 0.7em;
+  border-radius: 0.5em;
+  display: block;
+  width: fit-content;
+  margin: 0.7em auto;
+}
+
+.dark_mode .material-icons {
+  transition: 0.25s;
+}
+.dark_mode .material-icons:hover {
+  color: #1888F8;
+}
+
+.changeTheme {
+  background: #1D1E22;
+  color: #eee;
+}
+.changeTheme .menu {
+  background-color: #1888F8;
+}
+.changeTheme .material-icons {
+  color: #1888F8;
+}
+.changeTheme .head1 {
+  color: #1888F8;
+}
+.changeTheme .dark_mode .material-icons:hover {
+  color: #F88818;
+}
+.changeTheme a {
+  background-color: #1888F8;
+}
+.changeTheme a:hover {
+  color: #1888F8;
+  background-color: rgb(228, 228, 228);
+}
+.changeTheme #hero {
+  border-color: #1888F8;
+}
+.changeTheme * {
+  border-color: #1888F8;
+}
+.changeTheme .card {
+  border-color: #1888F8;
+}
+.changeTheme .logolight {
+  display: none;
+}
+.changeTheme .logodark {
+  display: block;
+}
+.changeTheme .close {
+  color: white;
+}
+.changeTheme .close:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content {
+  background-color: #1D1E22;
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container input {
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container button {
+  background-color: #1888F8;
+}
+.changeTheme .modal-content .container button:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content .container a {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset {
+  border-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset legend {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset input {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: white;
+}
+.changeTheme form:not(#login) fieldset button {
+  background-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset button:hover {
+  color: #1888F8;
+}
+.changeTheme .blink {
+  background-color: transparent;
+  color: #1888F8;
+}
+.changeTheme .blink:hover {
+  background-color: transparent;
+}
+.changeTheme #dropdown {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: #eee;
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #F88818;
+}
+
+body {
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+:root {
+  --primary-color: $primary-color-light;
+}
+
+* {
+  border-color: #F88818;
+}
+
+.card {
+  border: 1px solid #F88818;
+  border-radius: 2em;
+}
+.card p {
+  padding: 5px 0;
+  font-size: 1.3em;
+}
+
+.logolight {
+  display: block;
+}
+
+.logodark {
+  display: none;
+}
+
+a {
+  transition: 0.25s;
+  color: white;
+}
+a:hover {
+  background-color: rgb(228, 228, 228);
+  color: #F88818;
+}
+a:not(nav a, header a) {
+  background-color: #F88818;
+  text-decoration: none;
+  padding: 0.5em 0.7em;
+  border-radius: 0.5em;
+  display: block;
+  width: fit-content;
+  margin: 0.7em auto;
+}
+
+.dark_mode .material-icons {
+  transition: 0.25s;
+}
+.dark_mode .material-icons:hover {
+  color: #1888F8;
+}
+
+.changeTheme {
+  background: #1D1E22;
+  color: #eee;
+}
+.changeTheme .menu {
+  background-color: #1888F8;
+}
+.changeTheme .material-icons {
+  color: #1888F8;
+}
+.changeTheme .head1 {
+  color: #1888F8;
+}
+.changeTheme .dark_mode .material-icons:hover {
+  color: #F88818;
+}
+.changeTheme a {
+  background-color: #1888F8;
+}
+.changeTheme a:hover {
+  color: #1888F8;
+  background-color: rgb(228, 228, 228);
+}
+.changeTheme #hero {
+  border-color: #1888F8;
+}
+.changeTheme * {
+  border-color: #1888F8;
+}
+.changeTheme .card {
+  border-color: #1888F8;
+}
+.changeTheme .logolight {
+  display: none;
+}
+.changeTheme .logodark {
+  display: block;
+}
+.changeTheme .close {
+  color: white;
+}
+.changeTheme .close:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content {
+  background-color: #1D1E22;
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container input {
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container button {
+  background-color: #1888F8;
+}
+.changeTheme .modal-content .container button:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content .container a {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset {
+  border-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset legend {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset input {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: white;
+}
+.changeTheme form:not(#login) fieldset button {
+  background-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset button:hover {
+  color: #1888F8;
+}
+.changeTheme .blink {
+  background-color: transparent;
+  color: #1888F8;
+}
+.changeTheme .blink:hover {
+  background-color: transparent;
+}
+.changeTheme #dropdown {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: #eee;
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #F88818;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .dark_mode {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: auto 10px auto auto;
+}
+
+.head1 {
+  font-size: 3em;
+  color: #F88818;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+}
+.head1 img {
+  margin: 10px 0.3em;
+  height: 1em;
+}
+.head1 a {
+  width: fit-content;
+}
+
+.dark_mode:hover {
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: $primary-color-light;
+}
+
+* {
+  border-color: #F88818;
+}
+
+.card {
+  border: 1px solid #F88818;
+  border-radius: 2em;
+}
+.card p {
+  padding: 5px 0;
+  font-size: 1.3em;
+}
+
+.logolight {
+  display: block;
+}
+
+.logodark {
+  display: none;
+}
+
+a {
+  transition: 0.25s;
+  color: white;
+}
+a:hover {
+  background-color: rgb(228, 228, 228);
+  color: #F88818;
+}
+a:not(nav a, header a) {
+  background-color: #F88818;
+  text-decoration: none;
+  padding: 0.5em 0.7em;
+  border-radius: 0.5em;
+  display: block;
+  width: fit-content;
+  margin: 0.7em auto;
+}
+
+.dark_mode .material-icons {
+  transition: 0.25s;
+}
+.dark_mode .material-icons:hover {
+  color: #1888F8;
+}
+
+.changeTheme {
+  background: #1D1E22;
+  color: #eee;
+}
+.changeTheme .menu {
+  background-color: #1888F8;
+}
+.changeTheme .material-icons {
+  color: #1888F8;
+}
+.changeTheme .head1 {
+  color: #1888F8;
+}
+.changeTheme .dark_mode .material-icons:hover {
+  color: #F88818;
+}
+.changeTheme a {
+  background-color: #1888F8;
+}
+.changeTheme a:hover {
+  color: #1888F8;
+  background-color: rgb(228, 228, 228);
+}
+.changeTheme #hero {
+  border-color: #1888F8;
+}
+.changeTheme * {
+  border-color: #1888F8;
+}
+.changeTheme .card {
+  border-color: #1888F8;
+}
+.changeTheme .logolight {
+  display: none;
+}
+.changeTheme .logodark {
+  display: block;
+}
+.changeTheme .close {
+  color: white;
+}
+.changeTheme .close:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content {
+  background-color: #1D1E22;
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container input {
+  border-color: #1888F8;
+}
+.changeTheme .modal-content .container button {
+  background-color: #1888F8;
+}
+.changeTheme .modal-content .container button:hover {
+  color: #1888F8;
+}
+.changeTheme .modal-content .container a {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset {
+  border-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset legend {
+  color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset input {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: white;
+}
+.changeTheme form:not(#login) fieldset button {
+  background-color: #1888F8;
+}
+.changeTheme form:not(#login) fieldset button:hover {
+  color: #1888F8;
+}
+.changeTheme .blink {
+  background-color: transparent;
+  color: #1888F8;
+}
+.changeTheme .blink:hover {
+  background-color: transparent;
+}
+.changeTheme #dropdown {
+  border-color: #1888F8;
+  background-color: #1D1E22;
+  color: #eee;
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #F88818;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  background-color: #F88818;
+  color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.371);
+}
+.menu a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid #F88818;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 30em;
+  border-radius: 2em;
+  padding: 1em;
+  transition: 0.2s;
+}
+.modal-content .imgcontainer {
+  max-width: 13em;
+  max-height: 13em;
+  margin: 0 auto;
+}
+.modal-content .imgcontainer img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+.modal-content .container {
+  margin-left: 1em;
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: fit-content;
+}
+.modal-content .container label, .modal-content .container input {
+  display: block;
+}
+.modal-content .container label input, .modal-content .container input input {
+  display: inline;
+}
+.modal-content .container label {
+  margin-top: 0.7em;
+}
+.modal-content .container input {
+  border: 1px solid #F88818;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+.modal-content .container button {
+  border: none;
+  background-color: #F88818;
+  color: white;
+  transition: 0.25s;
+  font-size: 1em;
+  margin: 1em auto 0;
+  display: block;
+  width: 100%;
+}
+.modal-content .container button:hover {
+  cursor: pointer;
+  color: #F88818;
+  background-color: rgb(228, 228, 228);
+}
+.modal-content .container input:not(input[type=checkbox]), .modal-content .container button {
+  padding: 0.4em 0.6em;
+  border-radius: 0.4em;
+  width: 100%;
+}
+.modal-content .container h2 {
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+.modal-content .container a {
+  background-color: transparent;
+  color: #F88818;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0 auto;
+}
+.modal-content .container a:hover {
+  text-decoration: underline;
+}
+
+/* The Close Button (x) */
+.close {
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.25s;
+  width: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 5px auto auto;
+}
+
+.close:hover,
+.close:focus {
+  color: #F88818;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body {
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+footer {
+  width: 100%;
+  background-color: #36454F;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+  margin: 5em 0 0;
+}
+
+body {
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+main {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+  }
+}
+
+#hero {
+  border-bottom: 1px solid #F88818;
+}
+#hero .img-container {
+  position: relative;
+  z-index: -1;
+  background: url("../../images/lyft.webp");
+  background-size: auto 115%;
+  background-position-y: -35px;
+  width: 100%;
+  height: 300px;
+  border-radius: 0 0 0 100%;
+  border: 1em solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+@media screen and (max-width: 350px) {
+  #hero .img-container {
+    background-position-x: -100px;
+  }
+}
+@media screen and (min-width: 640px) {
+  #hero .img-container {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 640px) and (min-width: 1000px) {
+  #hero .img-container {
+    height: 400px;
+    border-radius: 0 0 12em 100%;
+    border-right: 1px solid;
+    border-left: 1px solid;
+  }
+}
+#hero .img-container img {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  width: 10em;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.6117647059));
+  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.5294117647));
+}
+@media screen and (min-width: 640px) {
+  #hero .img-container img {
+    width: 12em;
+    top: 55%;
+  }
+}
+@media screen and (min-width: 640px) and (min-width: 1000px) {
+  #hero .img-container img {
+    top: 60%;
+    width: 13em;
+  }
+}
+#hero p {
+  padding: 1.6em;
+}
+
+#exercises-home, .cards {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#exercises-home .card, .cards .card {
+  padding: 2em;
+  width: 250px;
+  height: 25em;
+  margin: 1em;
+}
+#exercises-home .card .img-container, .cards .card .img-container {
+  display: block;
+  height: 9em;
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+#exercises h1 {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3em;
+}
+
+.register {
+  margin: 3em auto;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#register-content h1 {
+  text-align: center;
+  margin: 1em 0 0;
+}
+
+.blink {
+  background-color: transparent;
+  color: #F88818;
+  font-size: 1.3em;
+}
+.blink:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.workout_dropdown h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.5em auto auto;
+}
+.workout_dropdown select {
+  font-size: 1.5em;
+  padding: 0.2em 0.4em;
+  margin: 2em auto;
+  display: block;
+  border-radius: 0.4em;
+  border-color: #F88818;
+}
+
+body {
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+form:not(#login) fieldset {
+  border: 1px solid #F88818;
+  border-radius: 0.8em;
+  width: 90%;
+  max-width: 35em;
+  padding: 1em;
+  margin: 2em auto 1em;
+}
+form:not(#login) fieldset legend {
+  color: #F88818;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+form:not(#login) fieldset label, form:not(#login) fieldset input {
+  display: block;
+  font-size: 1.5em;
+}
+form:not(#login) fieldset label {
+  margin: 1em auto 0.3em;
+}
+form:not(#login) fieldset input {
+  border: 1px solid #F88818;
+  padding: 0.3em;
+  width: 100%;
+  border-radius: 0.3em;
+}
+form:not(#login) fieldset button {
+  background-color: #F88818;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  margin: 1em auto 0;
+  display: block;
+  padding: 0.3em 0.7em;
+  border-radius: 0.4em;
+  width: 100%;
+  transition: 0.25s;
+}
+@media screen and (min-width: 450px) {
+  form:not(#login) fieldset button {
+    width: fit-content;
+  }
+}
+form:not(#login) fieldset button:hover {
+  background-color: rgb(228, 228, 228);
+  color: #F88818;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

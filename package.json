@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build --emptyOutDir"
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
